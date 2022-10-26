@@ -1,3 +1,6 @@
+// Refactor to classes 
+//still text based 
+
 
 //these will be kept in the user and computer objects 
 //global variables

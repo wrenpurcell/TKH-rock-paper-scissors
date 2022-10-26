@@ -10,10 +10,7 @@
 //paper beats rock 
 //rock beats scissors 
 //scissors beats paper 
-
-
-
-
+//use if else or switch statement to determine if user or computer wins
 
 
 
@@ -38,6 +35,11 @@
     //inside the while loop 
     //increment round counter 
     //run compare choice 
+
+
+
+
+// REFACTOR CLASSES
 
 //make parent class for user, computer 
   //computer has method to randomly select rock, paper or scissors
