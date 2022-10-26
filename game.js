@@ -2,22 +2,58 @@
 let computerScore = 0;
 let userScore = 0;
 
+
+//player class to be used as parent class for user and computer
+class Player{
+  constructor(name){
+    this.name=name;
+    this.score = 0;
+  }
+  addToScore(){
+    this.score++;
+  }
+}
+
+class Computer extends Player{
+  constructor(name){
+    super(name);
+  }
+  getRandomChoice(){
+    let choices = ["rock", "paper", "scissors"];
+    let randomNum = Math.floor(Math.random() * 3);
+    let computerChoice = choices[randomNum];
+    return computerChoice;
+  }
+}
+
+class User extends Player{
+  constructor(name){
+    super(name);
+  }
+  getUserChoice(){
+    //get user's choice from button input 
+  }
+}
+
+
+//refactored getChoice into Computer method 
+
 //function getChoice
   //gets user's choice of rock paper or scissors 
-  //gets a randome choice for computer player of rock paper or scissors 
+  //gets a random choice for computer player of rock paper or scissors 
   //returns an object containing the user's choice and computer's choice 
-function getChoice() {
-  let choices = ["rock", "paper", "scissors"];
-  let randomNum = Math.floor(Math.random() * 3);
-  let randomNum2 = Math.floor(Math.random() * 3);
-  let userChoice = choices[randomNum];
-  let computerChoice = choices[randomNum2];
+// function getChoice() {
+//   let choices = ["rock", "paper", "scissors"];
+//   let randomNum = Math.floor(Math.random() * 3);
+//   let randomNum2 = Math.floor(Math.random() * 3);
+//   let userChoice = choices[randomNum];
+//   let computerChoice = choices[randomNum2];
 
-  return {
-    userChoice,
-    computerChoice,
-  };
-}
+//   return {
+//     userChoice,
+//     computerChoice,
+//   };
+// }
 
 //function compareChoice 
   //takes in userChoice and computerChoice as arguments 
