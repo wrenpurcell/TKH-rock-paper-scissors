@@ -1,6 +1,8 @@
+
+//these will be kept in the user and computer objects 
 //global variables
-let computerScore = 0;
-let userScore = 0;
+// let computerScore = 0;
+// let userScore = 0;
 
 
 //player class to be used as parent class for user and computer
